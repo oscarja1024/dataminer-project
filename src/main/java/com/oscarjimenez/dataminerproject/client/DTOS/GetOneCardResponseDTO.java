@@ -21,6 +21,8 @@ public class GetOneCardResponseDTO {
     private String cardSetId;
     private String rarityId;
     private String artistName;
+    private String health;
+    private String attack;
     private String manaCost;
     private String name;
     private String image;
