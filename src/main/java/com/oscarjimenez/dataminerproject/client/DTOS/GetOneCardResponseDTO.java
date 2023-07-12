@@ -28,6 +28,7 @@ public class GetOneCardResponseDTO {
     private String image;
     private String imageGold;
     private String flavorText;
+    private String text;
     private String cropImage;
     private String parentId;
     private Set<String> keywordIds;
