@@ -13,7 +13,7 @@ import java.util.Map;
 @Builder
 public class MinerDTO {
 
-    @NonNull
+
     private String cardId;
     private List<String> cardIds;
     @NonNull
