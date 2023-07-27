@@ -12,9 +12,7 @@ import com.oscarjimenez.dataminerproject.service.GetCardsService;
 import com.oscarjimenez.dataminerproject.service.GetDecksService;
 import com.oscarjimenez.dataminerproject.service.GetMetadataService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController()
 @RequestMapping(path = "/hearthstoneMiner")
@@ -90,20 +88,21 @@ public class MinerController {
                 .build());
     }
 
-    @GetMapping(path="/decksByCode",consumes = "application/json" , produces = "application/json")
-    public DeckDTO getDeckByCode(MinerDTO request){
+    @PostMapping(path="/decksByCode",consumes = "application/json" , produces = "application/json")
+    public DeckDTO getDeckByCode(@RequestBody MinerDTO request){
+        System.out.println(request.getParams().get(Constants.CODE));
         return getDecksService.getDeckByCode(DeckRequestDTO.builder()
                 .code(request.getParams().get(Constants.CODE))
                 .build());
     }
 
-    @GetMapping(path="/oneCard",consumes = "application/json" , produces = "application/json")
-    public GetOneCardResponseDTO getOneCardById(MinerDTO request){
+    @PostMapping(path="/oneCard", consumes = "application/json" , produces = "application/json")
+    public GetOneCardResponseDTO getOneCardById(@RequestBody MinerDTO request){
         return getCardsService.getOneCardById(CardRequestDTO.builder()
                 .cardId(request.getCardId()).build());
     }
 
-    @GetMapping(path="/cards",consumes = "application/json" , produces = "application/json")
+    @PostMapping(path="/cards",consumes = "application/json" , produces = "application/json")
     public GetCardsResponseDTO getAllCards(MinerDTO request){
         return getCardsService.getAllCards(CardRequestDTO.builder()
                 .page(request.getPage()).build());

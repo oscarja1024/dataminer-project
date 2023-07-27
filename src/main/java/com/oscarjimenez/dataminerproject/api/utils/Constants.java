@@ -15,7 +15,7 @@ public class Constants {
 
     public static final String HERO = "hero";
 
-    public static final String CODE = "code";
+    public static final String CODE = "CODE";
 
     public static final String PAGE_SIZE = "pageSize";
 
