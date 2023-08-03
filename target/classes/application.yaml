@@ -1,8 +1,0 @@
-values:
-  rest:
-    base-url: https://eu.api.blizzard.com/hearthstone
-    token-url: https://oauth.battle.net/token
-    basic-auth: Basic ZDIwMWRkOTE2Y2YwNGUxMDlmOWM1MjY1MGRkOWIyOWU6SG9BTDJCa0N6d1hZQVdnSFYweUJMWnhtdTY1SDRHbWs=
-
-server:
-  port: 7373
