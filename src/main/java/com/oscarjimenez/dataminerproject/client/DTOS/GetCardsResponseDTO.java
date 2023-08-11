@@ -17,17 +17,4 @@ public class GetCardsResponseDTO {
     private int pageCount;
     private int page;
 
-    public List<String> getCardIds(){
-
-        List<String> result = new ArrayList<>();
-
-        for(GetOneCardResponseDTO card : this.cards){
-            if(!card.getId().isEmpty()){
-                result.add(card.getId());
-            }
-        }
-
-        return result;
-    }
-
 }

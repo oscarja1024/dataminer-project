@@ -13,11 +13,11 @@ public interface FeignBlizzardAPIGetDecks {
 
     @GetMapping("/deck")
     DeckDTO getDeckByCardListAndHero(@RequestHeader("Authorization") String token
-            , @RequestParam String locale, @RequestParam List<String> ids, @RequestParam String hero);
+            , @RequestParam String locale, @RequestParam String ids, @RequestParam String hero);
 
     @GetMapping("/deck")
     DeckDTO getDeckByCardListAutoHero(@RequestHeader("Authorization") String token
-            , @RequestParam String locale, @RequestParam List<String> ids);
+            , @RequestParam String locale, @RequestParam String ids);
 
     //Get Deck by one preDone
     @GetMapping("/deck")

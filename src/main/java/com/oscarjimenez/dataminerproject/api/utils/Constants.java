@@ -11,26 +11,26 @@ public class Constants {
 
     public static final String CATEGORY = "category";
 
-    public static final String SORT = "sort";
+    public static final String SORT = "SORT";
 
-    public static final String HERO = "hero";
+    public static final String HERO = "HERO";
 
     public static final String CODE = "CODE";
 
-    public static final String PAGE_SIZE = "pageSize";
+    public static final String PAGE_SIZE = "PAGE_SIZE";
 
-    public static final String MANA = "mana";
+    public static final String MANA = "MANA";
 
-    public static final String ATTACK = "attack";
+    public static final String ATTACK = "ATTACK";
 
-    public static final String CARD_TYPE = "cardType";
+    public static final String CARD_TYPE = "CARD_TYPE";
 
-    public static final String HEALTH = "health";
+    public static final String HEALTH = "HEALTH";
 
-    public static final String GAME_MODE = "gameMode";
+    public static final String GAME_MODE = "GAME_MODE";
 
-    public static final String SPELL_SCHOOL = "spellSchool";
+    public static final String SPELL_SCHOOL = "SPELL_SCHOOL";
 
-    public static final String SET = "set";
+    public static final String SET = "SET";
 }
 

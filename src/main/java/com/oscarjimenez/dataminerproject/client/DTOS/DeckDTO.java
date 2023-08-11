@@ -13,7 +13,7 @@ import java.util.UUID;
 @Builder
 public class DeckDTO {
 
-    private UUID deckCode;
+    private String deckCode;
     private String version;
     private String format;
     private HeroDTO hero;
@@ -21,7 +21,7 @@ public class DeckDTO {
     @JsonProperty("class")
     private ClassDTO clase;
     private List<GetOneCardResponseDTO> cards;
-    private List<String> cardsIds;
+    private String cardsIds;
     private int cardCount;
 
 

@@ -34,7 +34,7 @@ public interface FeignBlizzardAPIGetCards {
 
     @GetMapping("/cards")
     GetCardsResponseDTO getAllCardsByManaCost(@RequestHeader("Authorization") String token
-            , @RequestParam String locale, @RequestParam String page,@RequestParam String manaCost);
+            , @RequestParam String locale, @RequestParam String page,@RequestParam int manaCost);
 
     @GetMapping("/cards")
     GetCardsResponseDTO getAllCardsByManaCostAndAttack(@RequestHeader("Authorization") String token

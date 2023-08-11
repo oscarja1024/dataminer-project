@@ -47,7 +47,7 @@ public class GetDecksServiceImpl implements GetDecksService {
         var token = commonUtils.getToken();
 
         var response = feignBlizzardAPIGetDecks.getDeckByCode(Constants.BEARER+token.getAccess_token()
-                ,requestDeck.getCode(),Constants.LOCALE);
+                ,Constants.LOCALE,requestDeck.getCode());
 
         return response;
     }

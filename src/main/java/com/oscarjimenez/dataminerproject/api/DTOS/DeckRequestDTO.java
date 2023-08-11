@@ -11,7 +11,7 @@ import java.util.List;
 @Builder
 public class DeckRequestDTO {
 
-    private List<String> ids;
+    private String ids;
     private String hero;
     private String code;
 

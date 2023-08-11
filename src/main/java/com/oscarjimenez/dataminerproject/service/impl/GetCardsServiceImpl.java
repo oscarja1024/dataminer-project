@@ -80,7 +80,7 @@ public class GetCardsServiceImpl implements GetCardsService {
         var token = commonUtils.getToken();
 
         var response = feignBlizzardAPIGetCards.getAllCardsByManaCost(Constants.BEARER+token.getAccess_token()
-                ,Constants.LOCALE,requestCards.getPage(),requestCards.getMana());
+                ,Constants.LOCALE,requestCards.getPage(),Integer.parseInt(requestCards.getMana()));
 
         return response;
     }
